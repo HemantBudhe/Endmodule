@@ -1,0 +1,116 @@
+Microsoft Windows [Version 10.0.22621.1702]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\local>git clone https://github.com/HemantBudhe/Endmodule.git
+Cloning into 'Endmodule'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+D:\local>dir
+ Volume in drive D is New D
+ Volume Serial Number is FEC5-B251
+
+ Directory of D:\local
+
+17-05-2023  02:21    <DIR>          .
+17-05-2023  02:21    <DIR>          Endmodule
+               0 File(s)              0 bytes
+               2 Dir(s)  108,780,564,480 bytes free
+
+D:\local>cd Endmodule
+
+D:\local\Endmodule>dir
+ Volume in drive D is New D
+ Volume Serial Number is FEC5-B251
+
+ Directory of D:\local\Endmodule
+
+17-05-2023  02:21    <DIR>          .
+17-05-2023  02:21    <DIR>          ..
+17-05-2023  02:21                11 README.md
+               1 File(s)             11 bytes
+               2 Dir(s)  108,780,564,480 bytes free
+
+D:\local\Endmodule>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        WebApp/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\local\Endmodule>git add .
+
+D:\local\Endmodule>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   WebApp/.gitignore
+        new file:   WebApp/Dockerfile
+        new file:   WebApp/package.json
+        new file:   WebApp/public/index.html
+        new file:   WebApp/server.js
+
+
+D:\local\Endmodule>git commit -m "update"
+[main 49ab880] update
+ 5 files changed, 73 insertions(+)
+ create mode 100644 WebApp/.gitignore
+ create mode 100644 WebApp/Dockerfile
+ create mode 100644 WebApp/package.json
+ create mode 100644 WebApp/public/index.html
+ create mode 100644 WebApp/server.js
+
+D:\local\Endmodule>git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 1.42 KiB | 1.42 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/HemantBudhe/Endmodule.git
+   0ee32c3..49ab880  main -> main
+
+D:\local\Endmodule>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\local\Endmodule>git add .
+
+D:\local\Endmodule>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   text.txt
+
+
+D:\local\Endmodule>git commit -m "txtadd"
+[main 0b0073b] txtadd
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text.txt
+
+D:\local\Endmodule>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/HemantBudhe/Endmodule.git
+   49ab880..0b0073b  main -> main
+
+D:\local\Endmodule>
